@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  min-height: 100vh;
+  overflow: hidden;
+
+}
+.cube{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background: rgb(127, 3, 244);
+    animation: cube 0.5s infinite ease-in-out;
+    border: 5px solid rgb(98, 98, 219);
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@keyframes cube{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
